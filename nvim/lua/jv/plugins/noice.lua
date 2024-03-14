@@ -37,11 +37,11 @@ return -- lazy.nvim
 
 		local keymap = vim.keymap
 
-		keymap.set("n", "<leader>nd", function()
+		keymap.set("n", "<leader>nx", function()
 			noice.cmd("dismiss")
 		end, { desc = "dismiss visible message" })
 
-		keymap.set("n", "<leader>ndd", function()
+		keymap.set("n", "<leader>nd", function()
 			noice.cmd("disable")
 		end, { desc = "disable noice extension" })
 
@@ -51,6 +51,6 @@ return -- lazy.nvim
 
 		keymap.set("n", "<leader>nh", function()
 			noice.cmd("history")
-		end, { desc = "disable noice extension" })
+		end, { desc = "history of noice messages" })
 	end,
 }

@@ -43,5 +43,10 @@ return {
 		keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
 		keymap.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 		keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+		keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { desc = "git status" })
+		keymap.set("n", "<leader>gh", "<cmd>Telescope git_stash<cr>", { desc = "git stash" })
+		keymap.set("n", "<leader>gf", "<cmd>Telescope git_files<cr>", { desc = "git files" })
+		keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>", { desc = "git commits" })
+		keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>", { desc = "git branches" })
 	end,
 }
