@@ -47,7 +47,7 @@ return -- lazy.nvim
 
 		keymap.set("n", "<leader>ne", function()
 			noice.cmd("enable")
-		end, { desc = "disable noice extension" })
+		end, { desc = "enable noice extension" })
 
 		keymap.set("n", "<leader>nh", function()
 			noice.cmd("history")
