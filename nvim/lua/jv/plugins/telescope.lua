@@ -33,7 +33,13 @@ return {
 				},
 				layout_config = {
 					preview_width = 0.5
-				}
+				},
+				file_ignore_patterns = {
+					"bin",
+					"obj",
+					".git",
+					"node_module",
+				},
 
 			},
 		})
