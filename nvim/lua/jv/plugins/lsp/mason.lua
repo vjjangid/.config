@@ -27,6 +27,11 @@ return {
 			ensure_installed = {
 				"lua_ls",
 				"omnisharp",
+				"angularls",
+				"html",
+				"cssls",
+				"tsserver",
+
 			},
 
 			automatic_installation = true,
