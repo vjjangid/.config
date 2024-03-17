@@ -1,5 +1,9 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	dependencies = {
+		-- autocomplete of html tags
+		"windwp/nvim-ts-autotag",
+	},
 	event = { "BufReadPre", "BufNewFile" },
 	build = ":TSUpdate",
 
@@ -17,6 +21,8 @@ return {
 				"bash",
 				"typescript",
 				"vimdoc",
+				"html",
+				"scss",
 
 			},
 
@@ -27,6 +33,10 @@ return {
 			},
 
 			indent = {
+				enable = true,
+			},
+			--autocomplet of tags
+			autotag = {
 				enable = true,
 			}
 

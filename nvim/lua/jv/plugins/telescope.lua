@@ -37,7 +37,7 @@ return {
 				file_ignore_patterns = {
 					"bin",
 					"obj",
-					".git",
+					".git/",
 					"node_module",
 				},
 
