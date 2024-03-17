@@ -1,0 +1,7 @@
+return {
+	-- plugin to add text/""/()/ more in surrounding of selected text
+	"kylechui/nvim-surround",
+	version = "*", -- Use for stability; omit to use `main` branch for the latest features
+	event = "VeryLazy",
+	config = true
+}
