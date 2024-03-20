@@ -2,9 +2,14 @@
 local opt = vim.opt
 
 opt.relativenumber = true
-opt.shiftwidth = 4
+opt.number = true
 opt.wrap = false
-opt.cursorline = false
+opt.cursorline = true 
+
+opt.shiftwidth = 2
+opt.tabstop = 2
+opt.expandtab = true
+opt.autoindent = true
 
 opt.clipboard:append("unnamedplus")
 
