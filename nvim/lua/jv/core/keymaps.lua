@@ -24,3 +24,8 @@ keymap.set("n", "<C-l>", "<C-w>l", { desc = "move to right window" })
 -- Better buffer navigation
 keymap.set("n", "<S-h>", "<cmd>:bp<CR>", {desc = "move to previous buffer"})
 keymap.set("n", "<S-l>", "<cmd>:bn<CR>", {desc = "move to previous buffer"})
+
+--highlights
+keymap.set("n", "<leader>ch", "<cmd>nohl<CR>", {desc = "clear search highlights"})
+
+
