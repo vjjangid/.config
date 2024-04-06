@@ -6,6 +6,7 @@ local keymap = vim.keymap
 
 keymap.set("i", "jk", "<Esc>", { desc = "Exit from insert mode" })
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "split vertically" })
+keymap.set("n", "<leader>sx", "<cmd>wq<CR>", { desc = "save and close split" })
 
 keymap.set("n", "<leader>to", "<cmd>:tabnew<Enter>", { desc = "open new tab" })
 keymap.set("n", "<leader>tx", "<cmd>:tabclose<Enter>", { desc = "close current tab" })
@@ -19,3 +20,7 @@ keymap.set("n", "<C-h>", "<C-w>h", { desc = "move to left window" })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "move to down window" })
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "move to up window" })
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "move to right window" })
+
+-- Better buffer navigation
+keymap.set("n", "<S-h>", "<cmd>:bp<CR>", {desc = "move to previous buffer"})
+keymap.set("n", "<S-l>", "<cmd>:bn<CR>", {desc = "move to previous buffer"})
